@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<title> Your Level </title>
+	<style>
+		  #but {
+	    border: grey solid 5px;
+		border-radius: 10px;
+		margin-bottom: 100px;
+		margin-top: 50px;
+		width: 152px;
+		onmouseover-border: green solid 5px;
+	  }
+	</style>
+  </head>
+  <body>
+  <center>
+  <button onmouseup=myFunction() id="but" onmouseover="mouseOver()" onmouseout="mouseOut()"> Level Up! </button>
+  <script src="test.js"></script>
+  </center>
+  </body>
+</html>
