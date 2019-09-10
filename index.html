@@ -10,7 +10,7 @@ var level = 1
 
 function myFunction() {
 	level = level + 1;
-	alert("You have proceded to level " + level);
+	document.getElementById("butt").innerHTML = "Currently level " + level;
 }
 
 function mouseOver() {
@@ -22,6 +22,12 @@ function mouseOut() {
   document.getElementById("but").style.color = "black";
       document.getElementById("but").style.border = "grey solid 5px";
 }
+
+function mouseScroll() {
+	document.getElementById("but").style.color = "blue";
+	 document.getElementById("but").style.border = "blue solid 5px";
+}
+
 </script>
 	<style>
 		  #but {
@@ -36,7 +42,10 @@ function mouseOut() {
   </head>
   <body>
   <center>
-  <button onmouseup=myFunction() id="but" onmouseover="mouseOver()" onmouseout="mouseOut()"> Level Up! </button>
+  <h1 id="butt">
+	 You are at level 1
+	</h1>
+  <button onmouseup=myFunction() id="but" onmouseover="mouseOver()" onmouseout="mouseOut()" onscroll="mouseScroll"> Level Up! </button>
   <script src="test.js"></script>
   </center>
   </body>
