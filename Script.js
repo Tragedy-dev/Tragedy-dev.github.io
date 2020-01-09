@@ -105,7 +105,7 @@ function buyUpgrade() {
 	level = level + 1;
 	document.getElementById("levelText").innerHTML = "level " + level;
 	}
-	if (upgrades == 3){
+	if (upgrades == 4){
 	robot = "true"
 	document.getElementById("roboDiv").style.display = "block";
 	}
