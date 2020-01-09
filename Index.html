@@ -1,0 +1,174 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Levels </title>
+    <style>
+        #but {
+            border: grey solid 2px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            width: 152px;
+        }
+
+        #buttt {
+            border: grey solid 3px;
+            border-radius: 10px;
+            width: 152px;
+            height: 152px;
+            display: none;
+            margin-left: 40%;
+            float: left;
+        }
+
+        #roboDiv {
+            border: grey solid 3px;
+            border-radius: 10px;
+            width: 152px;
+            height: 152px;
+            display: inline-block;
+            float: right;
+            margin-right: 40%;
+            display: none;
+        }
+
+        #upgrade {
+            border: black solid 1px;
+            border-radius: 10px;
+            margin-top: 6px;
+            width: 140px;
+            height: 140px;
+            background-color: rgb(220,220,220);
+        }
+        #fancyRobo {
+            border: black solid 1px;
+            border-radius: 10px;
+            margin-top: 6px;
+            width: 140px;
+            height: 140px;
+            background-color: rgb(220,220,220);
+        }
+
+        #upgradeTitle {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        #upgradeText {
+            margin-top: 1px;
+            font-size: 11px;
+        }
+
+        #upgradeCost {
+            font-size: 10px;
+            margin-top: -9px;
+        }
+
+        #levelText {
+            margin-top: -15px;
+            font-size: 10px;
+            -webkit-animation: none;
+        }
+
+        #myProgress {
+            width: 100%;
+            background-color: white;
+            border: black solid 1px;
+            border-radius: 7px;
+        }
+
+        #myBar {
+            width: 0%;
+            height: 30px;
+            background-color: rgb(127,255,0);
+            border-radius: 5px;
+        }
+
+        @-webkit-keyframes colorchange {
+            0% {
+                color: blue;
+            }
+
+            10% {
+                color: #8e44ad;
+            }
+
+            20% {
+                color: #1abc9c;
+            }
+
+            30% {
+                color: #d35400;
+            }
+
+            40% {
+                color: blue;
+            }
+
+            50% {
+                color: #34495e;
+            }
+
+            60% {
+                color: blue;
+            }
+
+            70% {
+                color: #2980b9;
+            }
+
+            80% {
+                color: #f1c40f;
+            }
+
+            90% {
+                color: #2980b9;
+            }
+
+            100% {
+                color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 id="butt">
+            You dont have any points
+        </h1>
+        <p id="levelText"> Level 1 </p>
+        <button onkeypress="myFunction()" onmouseup="myFunction()" id="but" onmouseover="mouseOver()" onmouseout="mouseOut()" onscroll="mouseScroll()"> Get Points! </button>
+        <script src="Script.js"></script>
+        <div id="buttonContainer">
+            <div id="buttt">
+                <div id="upgrade" onclick="upgradeFun()" onmouseover="mouseOverUpgradeBuyAble()" onmouseout="mouseOutUpgrade()">
+                    <p id="upgradeTitle"> Upgrades </p>
+                    <p id="upgradeCost"> Cost: 15 points </p>
+                    <p id="upgradeText">  </p>
+                </div>
+            </div>
+            <div id="roboDiv">
+                <div id="fancyRobo">
+                    <img src="Robot.png" />
+                    <p>You own personal robot!</p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </center>
+    <div id="myProgress">
+        <div id="myBar">
+        </div>
+    </div>
+</body>
+</html>
