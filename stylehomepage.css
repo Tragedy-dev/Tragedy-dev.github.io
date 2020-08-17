@@ -29,10 +29,27 @@ body {
 }
 
 #logoDiv {
+    background-color: #0B2545;
     position: absolute;
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
     z-index: 2;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    align-content: center;
 }
+
+#logoHolder {
+    width: 6vw;
+    height: 6vw;
+}
+#logo1 {
+    margin: 0px;
+    padding:0px;
+    height: 6vw;
+    width: 6vw;
+}
+
 
 /*for homepage: https://coolors.co/134074-13315c-0b2545-8da9c4-eef4ed*/
