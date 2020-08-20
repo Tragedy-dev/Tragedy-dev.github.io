@@ -1,5 +1,5 @@
 # Tragedy-dev.github.io
-I have a collection of stuff
+I do things sometimes
 
-site below
-# https://tragedy-dev.github.io/index.html
+site below:
+https://tragedy-dev.github.io
