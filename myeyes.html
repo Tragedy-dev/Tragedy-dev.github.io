@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <head>
+    <meta charset="UTF-8">
+    <title>My eyes</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+    <script>
+        function myFunc() {
+            var x = [
+                "Red",
+                "Blue",
+                "Green",
+                "Orange",
+                "Yellow",
+                "Purple"
+            ];
+            var i = Math.floor(Math.random() * 7);
+            document.getElementById("theBody").style.backgroundColor = x[i];
+        };
+        function repeat() {
+            setInterval(myFunc, 1);
+            alert("Epilepsy Warning! Fast strobing multicolored lights")
+        }
+    </script>
+    </head>
+    <body id="theBody" onclick="myFunc()" onload="repeat()">
+    </body>
+</html>

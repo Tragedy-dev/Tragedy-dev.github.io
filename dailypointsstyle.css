@@ -1,0 +1,25 @@
+#pointDisplay {
+    text-align: center;
+    align-content: center;
+    margin: auto;
+}
+
+#timeLeft {
+    text-align: center;
+}
+
+#btnDiv {
+    position: relative;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#getPointsBtn {
+    margin-top: 5px;
+}
